@@ -1,0 +1,59 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ddcnorth</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .slab  { fill:var(--action); }
+  .field { fill:var(--surface-field); }
+  .deep  { fill:var(--ink); }
+  .spoke { fill:var(--ice); }
+  .sq    { rx:var(--radius-none); }
+  [data-theme="midnight"] .field { fill:var(--white); }
+  [data-theme="midnight"] .deep  { fill:var(--graphite); }
+  [data-theme="midnight"] .spoke { fill:var(--midnight); }
+  .words { position:absolute; left:var(--space-12); bottom:var(--space-8); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:88px; line-height:.92; font-weight:500; letter-spacing:-0.04em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      action/midnight 240x280 slab bled off the top (the one brand hue, largest) · surface-field/ice 144x168 · ink/black 64x216 bled off the right edge — about 40% of 960x288
+  arrangement one tall slab with two satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     a 12-spoke ring at a 30-degree step, cut in ice into the midnight slab — from "one symbol, three base vertices, a 30-degree repeat" and the radial icon language
+  scales      sides in space-2 multiples; gutters space-4; spokes space-2 x space-12, inner radius space-12; every corner radius-none
+-->
+<rect class="slab sq" x="0" y="-16" width="240" height="280"/>
+<rect class="field sq" x="256" y="96" width="144" height="168"/>
+<rect class="deep sq" x="416" y="48" width="64" height="216"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(0 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(30 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(60 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(90 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(120 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(150 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(180 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(210 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(240 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(270 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(300 120 136)"/>
+<rect class="spoke" x="116" y="40" width="8" height="48" transform="rotate(330 120 136)"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">ddcnorth</h1>
+<p class="tag">Intelligence in motion.</p>
+</div>
+</div>
+</body>
+</html>

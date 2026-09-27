@@ -1,0 +1,15 @@
+<!-- @dsCard group="Layout" height=250 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Card — preview</title></head>
+<body>
+<div id="root" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);padding:var(--space-6)"></div>
+<script>
+  var D = window.DdcNorth, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(D.Card, { media: h(D.Logo, { variant: 'horizontal' }), caption: '01 / Primary horizontal' }),
+    h(D.Card, { media: h(D.Logo, { variant: 'symbol', width: 110, tone: 'midnight' }), caption: '03 / Shared symbol' }),
+    h(D.Card, { tone: 'reversed', media: h(D.Logo, { variant: 'horizontal', tone: 'white' }), caption: '06 / Reversed' })));
+</script>
+</body>
+</html>

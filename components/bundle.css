@@ -1,0 +1,28 @@
+/* ddcnorth — flat colour, square corners, no shadows. */
+body { margin: 0; font-family: var(--font-sans); font-size: 16px; line-height: 1.5; background: var(--surface); color: var(--ink); }
+.ddc-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; padding: var(--space-6); }
+.ddc-stack { display: grid; gap: var(--space-4); padding: var(--space-6); }
+
+.ddc-logo { display: block; max-width: 100%; height: auto; color: var(--logo-ink); }
+.ddc-logo--midnight { color: var(--midnight); }
+.ddc-logo--white { color: var(--white); }
+[data-theme="midnight"] .ddc-logo--midnight { color: var(--white); } /* never midnight on midnight */
+
+.ddc-btn { display: inline-flex; align-items: center; gap: var(--space-2); font: inherit; font-size: 16px; line-height: 1.25; border-radius: var(--radius-none); cursor: pointer; text-decoration: none; }
+.ddc-btn--primary { background: var(--action); color: var(--on-action); border: 0; padding: var(--space-4) var(--space-6); }
+.ddc-btn--secondary { background: transparent; color: var(--ink); border: var(--stroke-hairline) solid var(--line-strong); padding: 10px var(--space-4); }
+.ddc-btn:focus-visible, .ddc-card a:focus-visible { outline: var(--focus-width) solid var(--focus-ring); outline-offset: var(--focus-offset); }
+.ddc-btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.ddc-label-text { font-family: var(--font-mono); font-size: 12px; line-height: 16px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+
+.ddc-card { background: var(--surface-raised); color: var(--ink); padding: var(--space-6); min-height: 180px; border-radius: var(--radius-none); }
+.ddc-card--reversed { background: var(--midnight); color: var(--white); }
+.ddc-card__media { height: 130px; display: flex; align-items: center; justify-content: center; }
+.ddc-card__media > img, .ddc-card__media > svg { max-width: 100%; max-height: 100%; object-fit: contain; }
+.ddc-card__caption { font-size: 13px; line-height: 1.6; color: var(--ink-muted); margin: var(--space-4) 0 0; }
+.ddc-card--reversed .ddc-card__caption { color: var(--ice); }
+
+.ddc-note { background: var(--surface-field); color: var(--ink-on-field); padding: 22px 26px; font-size: 14px; line-height: 1.6; margin: 0; border-radius: var(--radius-none); }
+
+.ddc-icon { display: inline-block; flex: none; color: inherit; }

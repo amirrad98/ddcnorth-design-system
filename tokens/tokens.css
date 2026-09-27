@@ -1,0 +1,8 @@
+/* ddcnorth design tokens — generated from tokens/tokens.json.
+   Themes: default (off-white) on :root / [data-theme="light"], reversed on [data-theme="midnight"].
+   Fonts are not bundled: load Inter + Space Mono (see BRAND.md). */
+:root, [data-theme="light"]{--black:#000000;--off-white:#f7f6f3;--graphite:#4b4f56;--midnight:#0b2b4a;--ice:#c8d7e8;--white:#ffffff;--surface:var(--off-white);--surface-raised:var(--white);--surface-field:var(--ice);--ink:var(--black);--ink-muted:var(--graphite);--ink-on-field:var(--black);--action:var(--midnight);--on-action:var(--white);--logo-ink:var(--black);--line:#cdd0d2;--line-strong:#aeb5b9;--focus-ring:var(--midnight);}
+
+[data-theme="midnight"]{--black:#000000;--off-white:#f7f6f3;--graphite:#4b4f56;--midnight:#0b2b4a;--ice:#c8d7e8;--white:#ffffff;--surface:var(--midnight);--surface-raised:rgba(200, 215, 232, 0.08);--surface-field:var(--ice);--ink:var(--white);--ink-muted:var(--ice);--ink-on-field:var(--midnight);--action:var(--ice);--on-action:var(--midnight);--logo-ink:var(--white);--line:rgba(200, 215, 232, 0.24);--line-strong:rgba(200, 215, 232, 0.56);--focus-ring:var(--ice);}
+
+:root{--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--space-24:96px;--radius-none:0px;--stroke-hairline:1px;--stroke-icon:2px;--focus-width:3px;--focus-offset:4px;--logo-min-width:160px;--symbol-min-width:24px;--content-max:1260px;--font-display:"Inter Display", Inter, Arial, sans-serif;--font-sans:Inter, Arial, sans-serif;--font-mono:"Space Mono", monospace;}

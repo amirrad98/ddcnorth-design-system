@@ -1,0 +1,14 @@
+<!-- @dsCard group="Content" height=100 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Icon — preview</title></head>
+<body>
+<div id="root" class="ddc-row" style="gap:var(--space-8)"></div>
+<script>
+  var D = window.DdcNorth, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    D.Icon.names.map(function (n) { return h('span', { key: n, style: { display: 'grid', justifyItems: 'center', gap: 'var(--space-2)' } },
+      h(D.Icon, { name: n, size: 40, label: n }), h(D.Label, null, n)); })));
+</script>
+</body>
+</html>

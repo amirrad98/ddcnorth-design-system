@@ -1,0 +1,17 @@
+<!-- @dsCard group="Brand" height=200 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Logo — preview</title></head>
+<body>
+<div id="root" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:var(--space-4);padding:var(--space-6);align-items:center"></div>
+<script>
+  var D = window.DdcNorth, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(D.Logo, { variant: 'horizontal', width: 320 }),
+    h(D.Logo, { variant: 'stacked', width: 160 }),
+    h('div', { style: { display: 'flex', gap: 'var(--space-6)', alignItems: 'center' } },
+      h(D.Logo, { variant: 'symbol', width: 64, tone: 'midnight', title: 'ddcnorth symbol' }),
+      h(D.Logo, { variant: 'symbol', width: 24, title: 'ddcnorth symbol' }))));
+</script>
+</body>
+</html>
